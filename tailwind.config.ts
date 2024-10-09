@@ -35,10 +35,15 @@ const config: Config = {
       colors: {
         light: "#ffffff",
         dark: "#000000",
-        gradient: "var(--gradient-color)"
+        gradient: "var(--gradient-color)",
+        primary: "var(--primary-color)",
+        secondary: "var(--secondary-color)",
+        "red-main": "var(--red-color)",
+        "blue-main": "var(--blue-color)",
       },
       backgroundImage: {
-        gradient: "var(--gradient-color)",
+        gradient: "linear-gradient(135deg, var(--primary-color), var(--red-color))",
+        "gradient-black": "linear-gradient(135deg, #212329, #22232A)",
       },
     }
   },
