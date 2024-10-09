@@ -8,7 +8,7 @@ import ButtonComponent from "@/components/common/ButtonComponent";
 const HeroSection = () => {
   return (
     <section className="container py-20">
-      <div className="w-[600px] h-auto m-auto relative">
+      <div className="w-full lg:w-[600px] h-auto m-auto relative">
         <Image
           src={FRAME.src}
           alt=""

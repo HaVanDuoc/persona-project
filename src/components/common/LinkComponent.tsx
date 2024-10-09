@@ -8,13 +8,19 @@ interface Props {
   children: React.ReactNode;
   href: string;
   className?: string;
+  onClick?: () => void;
 }
 
-const LinkComponent: React.FC<Props> = ({ children, href, className }) => {
+const LinkComponent: React.FC<Props> = ({
+  children,
+  href,
+  className,
+  onClick,
+}) => {
   const { locale } = useParams();
 
   return (
-    <Link href={`/${locale}/${href}`} className={className}>
+    <Link href={`/${locale}/${href}`} className={className} onClick={onClick}>
       {children}
     </Link>
   );
