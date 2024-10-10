@@ -14,21 +14,15 @@ export default function MainLayout({
 }>) {
   return (
     <div className="bg-dark">
-      <SubDetailsContainer>
-        <header className="relative">
-          <Image
-            src={BG.src}
-            alt="bg"
-            fill
-            className="object-cover opacity-80"
-          />
-          <NavbarContainer />
-          <HeroSection />
-          <GreetingSection />
-        </header>
-        <main className="bg-black">{children}</main>
-        <FooterComponent />
-      </SubDetailsContainer>
+      <SubDetailsContainer />
+      <header className="relative">
+        <Image src={BG.src} alt="bg" fill className="object-cover opacity-50" />
+        <NavbarContainer />
+        <HeroSection />
+        <GreetingSection />
+      </header>
+      <main className="bg-black">{children}</main>
+      <FooterComponent />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 const pathPage = {
-    home: "",
+    home: "/",
     about: "about",
     whitePaper: "whitePaper",
     contact: "contact",

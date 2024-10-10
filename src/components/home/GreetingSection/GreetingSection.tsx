@@ -4,7 +4,6 @@ import React from "react";
 
 const GreetingSection = () => {
   const bg = "bg-gradient-to-b from-transparent to-black";
-  // const styleCornerBorder = "border-l-";
 
   return (
     <section className={`relative pt-20 ${bg}`}>
@@ -14,7 +13,7 @@ const GreetingSection = () => {
           breakLineAt={[0]}
           className="!text-left"
         />
-        <CornerBorderContainer>
+        <CornerBorderContainer corner="bottomLeft">
           <p className="p-10 max-w-lg">
             {`We're excited to introduce you to our amazing new NFT platform that
               allows you to create a truly digital representation of yourself.`}

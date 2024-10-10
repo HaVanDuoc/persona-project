@@ -37,7 +37,7 @@ const AsideMenuComponent = ({
             <>
               <LinkComponent
                 href={nav.href}
-                key={nav.id}
+                key={index}
                 className={`uppercase font-bold px-5 ${
                   isActive
                     ? "text-primary drop-shadow-2xl text-shadow text-shadow-primary"
