@@ -1,5 +1,5 @@
-import GreetingSection from "@/components/home/GreetingSection/GreetingSection";
-import HeroSection from "@/components/home/heroSection/HeroSection";
+import GreetingSection from "@/components/home/GreetingSection";
+import HeroSection from "@/components/home/HeroSection";
 import FooterComponent from "@/components/layout/footer/FooterComponent";
 import Image from "next/image";
 
