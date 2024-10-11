@@ -1,41 +1,38 @@
 import React from "react";
 import BoxLayoutSection from "@/components/common/BoxLayoutSection";
-import ImageComponent from "@/components/common/ImageComponent";
 import PERSONA from "@/assets/persona/persona (4).png";
-import FRAME from "@/assets/frame/Frame.svg";
+import FRAME from "@/assets/frame/Frame 36829.png";
 import TextHighlightComponent from "@/components/common/TextHighlightComponent";
 import AnimationFadeUpComponent from "@/components/common/AnimationFadeUpComponent";
 import PersonaComponent from "@/components/common/PersonaComponent";
+import FrameContainer from "../common/FrameContainer";
 
 const TradeSection = () => {
   return (
     <AnimationFadeUpComponent>
       <BoxLayoutSection padding>
-        <div className="flex flex-col lg:flex-row gap-24 items-center pb-24">
-          <div className="relative w-full sm:w-[500px]">
-            <PersonaComponent src={PERSONA} className="lg:min-w-[400px] " />
-          </div>
-          <div className="relative flex justify-center items-center">
-            <ImageComponent
-              img={FRAME}
-              alt="frame"
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 !max-h-full"
-            />
-            <div className="sm:w-[400px] text-sm sm:text-lg md:text-xl p-5 sm:p-20 overflow-hidden space-y-5 sm:space-y-8 ">
-              <TextHighlightComponent
-                text="With Project Persona, you can share and trade your customized NFT or it’s traits with others, creating a vibrant ecosystem of personalized digital personas."
-                highlights={[
-                  "share and trade your customized NFT or it’s traits",
-                ]}
-              />
+        <div className="flex flex-col xl:flex-row gap-24 justify-between items-center">
+            <PersonaComponent src={PERSONA} className="w-full sm:w-[500px] lg:min-w-[400px] " />
 
-              <p>
-                Our team will be able to engage with the community through
-                social media and other viable channels to gather feedback and
-                ideas for new features and traits.
-              </p>
-            </div>
-          </div>
+            <FrameContainer
+              frame={FRAME}
+              className="py-10 px-3 sm:py-20 sm:px-5"
+            >
+              <div className="sm:w-[300px] text-sm sm:text-lg md:text-xl overflow-hidden space-y-5 sm:space-y-8 ">
+                <TextHighlightComponent
+                  text="With Project Persona, you can share and trade your customized NFT or it’s traits with others, creating a vibrant ecosystem of personalized digital personas."
+                  highlights={[
+                    "share and trade your customized NFT or it’s traits",
+                  ]}
+                />
+
+                <p>
+                  Our team will be able to engage with the community through
+                  social media and other viable channels to gather feedback and
+                  ideas for new features and traits.
+                </p>
+              </div>
+            </FrameContainer>
         </div>
       </BoxLayoutSection>
     </AnimationFadeUpComponent>

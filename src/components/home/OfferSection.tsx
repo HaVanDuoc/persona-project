@@ -1,12 +1,11 @@
 import React from "react";
 import BoxLayoutSection from "@/components/common/BoxLayoutSection";
-import ImageComponent from "@/components/common/ImageComponent";
-
 import NFT from "@/assets/home/hcfbdg 1.png";
-import FRAME from "@/assets/home/Component 60.svg";
+import FRAME from "@/assets/frame/Component 60.png";
 import GlowingEffect from "@/components/common/GlowingEffect";
 import AnimationFadeUpComponent from "@/components/common/AnimationFadeUpComponent";
 import PersonaComponent from "@/components/common/PersonaComponent";
+import FrameContainer from "@/components/common/FrameContainer";
 
 const OfferSection = () => {
   return (
@@ -17,18 +16,18 @@ const OfferSection = () => {
             <PersonaComponent src={NFT} className="lg:min-w-[400px]" />
             <GlowingEffect />
           </div>
-          <div className="relative">
-            <ImageComponent
-              img={FRAME}
-              alt="frame"
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-[470px]"
-            />
-            <p className="text-sm sm:text-lg md:text-xl p-5 sm:p-20 overflow-hidden">
+
+          <FrameContainer
+            frame={FRAME}
+            overflow
+            className="py-10 sm:px-10"
+          >
+            <p className="text-sm sm:text-lg md:text-xl sm:w-[400px] z-30">
               We will also offer a Persona UI for holders to view, and manage
               your Project Persona NFTs. The Persona UI will be a fun and simple
               way for you to interact with your Project Persona NFT.
             </p>
-          </div>
+          </FrameContainer>
         </div>
       </BoxLayoutSection>
     </AnimationFadeUpComponent>

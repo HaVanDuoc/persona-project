@@ -1,11 +1,10 @@
+import React from "react";
 import AnimationFadeUpComponent from "@/components/common/AnimationFadeUpComponent";
 import BoxLayoutSection from "@/components/common/BoxLayoutSection";
-import ImageComponent from "@/components/common/ImageComponent";
 import TextHighlightComponent from "@/components/common/TextHighlightComponent";
-import React from "react";
-
-import FRAME from "@/assets/frame/Frame 36832.svg";
+import FRAME from "@/assets/frame/STAY TUNED.png";
 import cn from "@/utils/tailwind-utils";
+import FrameContainer from "@/components/common/FrameContainer";
 
 const StaySection = () => {
   const bg = "bg-gradient-to-t from-transparent to-black";
@@ -13,22 +12,19 @@ const StaySection = () => {
   return (
     <AnimationFadeUpComponent className={cn(bg)}>
       <BoxLayoutSection>
-        <div className={cn("pt-24 ")}>
-          <div className="relative w-[500px]">
-            <ImageComponent
-              img={FRAME}
-              alt="frame"
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 "
-            />
-            <TextHighlightComponent
-              text="It is worth mentioning that this is only a small part of a bigger plan that we have in store, we are constantly working on new developments to enhance the overall experience. Stay tuned, you don't want to miss out on what's coming next. "
-              highlights={[
-                "Stay tuned, you don't want to miss out on what's coming next.",
-              ]}
-              className="text-justify text-sm sm:text-lg md:text-xl px-24 py-20 sm:p-20 overflow-hidden"
-            />
-          </div>
-        </div>
+        <FrameContainer
+          frame={FRAME}
+          overflow
+          className="sm:w-[600px] sm:p-10 p-5 my-20"
+        >
+          <TextHighlightComponent
+            text="It is worth mentioning that this is only a small part of a bigger plan that we have in store, we are constantly working on new developments to enhance the overall experience. Stay tuned, you don't want to miss out on what's coming next. "
+            highlights={[
+              "Stay tuned, you don't want to miss out on what's coming next.",
+            ]}
+            className="text-justify text-sm sm:text-lg md:text-xl z-30"
+          />
+        </FrameContainer>
       </BoxLayoutSection>
     </AnimationFadeUpComponent>
   );

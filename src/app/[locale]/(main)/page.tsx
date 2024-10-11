@@ -1,5 +1,3 @@
-"use client";
-
 import BelieveSection from "@/components/home/BelieveSection";
 import DividerHomeComponent from "@/components/home/DividerHomeComponent";
 import NftSection from "@/components/home/NftSection";
@@ -7,7 +5,6 @@ import OfferSection from "@/components/home/OfferSection";
 import TradeSection from "@/components/home/TradeSection";
 import StaySection from "@/components/home/StaySection";
 import ThankSection from "@/components/home/ThankSection";
-
 import BG from "@/assets/BACKGROUND_HEADER.png";
 import Image from "next/image";
 

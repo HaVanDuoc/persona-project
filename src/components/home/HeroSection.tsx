@@ -1,24 +1,17 @@
-import Image from "next/image";
 import React from "react";
 import ButtonComponent from "@/components/common/ButtonComponent";
 import PersonaComponent from "@/components/common/PersonaComponent";
-import FRAME from "@/assets/hero/Frame 36827.png";
 import PERSONA from "@/assets/persona/persona (3).svg";
+import FrameContainer from "@/components/common/FrameContainer";
+import FRAME from "@/assets/frame/MAIN screen frame.png";
 
 const HeroSection = () => {
   return (
     <section className="container py-20">
       <div className="w-full lg:w-[600px] h-auto m-auto relative">
-        <Image
-          src={FRAME.src}
-          alt=""
-          width={500}
-          height={500}
-          className="w-full h-auto"
-        />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <FrameContainer frame={FRAME} overflow className="sm:px-24">
           <PersonaComponent src={PERSONA} />
-        </div>
+        </FrameContainer>
       </div>
 
       <div className="w-full text-center mt-10">
