@@ -3,16 +3,18 @@ import React from "react";
 
 const ImageComponent = ({
   img,
+  alt,
   className,
 }: {
   img: StaticImageData;
+  alt: string;
   className?: string;
 }) => {
   return (
-    <div className={`flex justify-center items-center ${className}`}>
+    <div className={`flex justify-center items-center w-full z-10 ${className}`}>
       <Image
         src={img.src}
-        alt="image"
+        alt={alt}
         width={img.width}
         height={img.height}
         className="w-full h-auto object-cover"
