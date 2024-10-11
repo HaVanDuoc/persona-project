@@ -14,16 +14,23 @@
     --grow: radial-gradient(circle, #F2C457, #F25757)
 }
 
-html {
-    overflow-x: hidden;
-}
-
-body {
-    scroll-behavior: smooth;
-}
-
-
 @layer base {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        font-family: Inter, sans-serif !important;
+        scroll-behavior: smooth;
+    }
+
     p {
         @apply text-light text-sm sm:text-base text-justify sm:text-left
     }

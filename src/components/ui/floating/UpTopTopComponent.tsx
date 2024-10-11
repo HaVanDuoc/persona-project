@@ -1,9 +1,9 @@
 "use client";
 
-import { Button } from "@nextui-org/react";
 import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { FaArrowUp } from "react-icons/fa";
+import Image from "next/image";
+import UPTO from "@/assets/upto.svg";
 
 const UpToTopComponent = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -40,15 +40,13 @@ const UpToTopComponent = () => {
           transition={{ duration: 0.2, ease: "easeInOut" }} // Thời gian hiệu ứng
           whileHover={{ scale: 1.2 }} // Phóng to khi hover
         >
-          <Button
-            isIconOnly
-            onPress={scrollToTop}
-            className={
-              "w-[45px] h-[45px] text-3xl text-light bg-gradient animation rounded-full shadow cursor-pointer"
-            }
-          >
-            <FaArrowUp />
-          </Button>
+          <div onClick={scrollToTop} className="w-[40px] h-[40px] text-3 animation rounded-full shadow cursor-pointer">
+            <Image
+              src={UPTO}
+              alt="button upto top"
+              className="w-full h-auto object-cover"
+            />
+          </div>
         </motion.div>
       )}
     </AnimatePresence>

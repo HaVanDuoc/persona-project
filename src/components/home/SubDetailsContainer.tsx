@@ -54,8 +54,6 @@ export const SubComponent: React.FC<SubComponentProps> = ({
 const SubDetailsContainer = () => {
   return (
     <div>
-      {/* <p>{children}</p> */}
-
       {/* Hero Position */}
       <SubComponent
         img={SUB_1}
@@ -77,19 +75,36 @@ const SubDetailsContainer = () => {
       />
 
       {/* Offer Section */}
-      <GlowingEffect size={500} position="left" className="top-[2200px] " />
-      <GlowingEffect size={500} position="right" className="top-[3000px] hidden sm:block" />
-      <SubComponent img={SUB_3} className="top-[3000px] right-[-100px] hidden lg:block" />
-      <SubComponent img={SUB_5} className="top-[2700px] left-[-70%] hidden lg:block" />
+      <GlowingEffect size={500} position="left" className="top-[2200px]" />
+      <GlowingEffect
+        size={500}
+        position="right"
+        className="top-[3000px] hidden sm:block"
+      />
+      {/* <SubComponent
+        img={SUB_3}
+        hidden="lg"
+        className="top-[3000px] right-[-100px]"
+      /> */}
+      <SubComponent
+        img={SUB_5}
+        className="top-[2700px] left-[-70%] hidden lg:block"
+      />
 
       <SubComponent img={SUB_6} className="top-[4000px] right-0" />
       <GlowingEffect size={400} position="right" className="top-[4200px]" />
-      <SubComponent img={SUB_2} className="top-[4300px] right-1/2 translate-x-1/2" />
+      <SubComponent
+        img={SUB_2}
+        className="top-[4300px] right-1/2 translate-x-1/2"
+      />
 
       <SubComponent img={SUB_5} className="top-[4300px] left-[-60%]" />
       <SubComponent img={SUB_6} className="top-[5000px] right-0" />
       <GlowingEffect size={400} position="right" className="top-[5200px]" />
-      <SubComponent img={SUB_2} className="top-[5000px] right-1/2 translate-x-1/2" />
+      <SubComponent
+        img={SUB_2}
+        className="top-[5000px] right-1/2 translate-x-1/2"
+      />
     </div>
   );
 };

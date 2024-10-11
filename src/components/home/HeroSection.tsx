@@ -1,9 +1,9 @@
 import React from "react";
 import ButtonComponent from "@/components/common/ButtonComponent";
 import PersonaComponent from "@/components/common/PersonaComponent";
-import PERSONA from "@/assets/persona/persona (3).svg";
 import FrameContainer from "@/components/common/FrameContainer";
 import FRAME from "@/assets/frame/MAIN screen frame.png";
+import PERSONA from "@/assets/persona/persona (5).png";
 
 const HeroSection = () => {
   return (

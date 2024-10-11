@@ -1,11 +1,11 @@
 import React from "react";
 import BoxLayoutSection from "@/components/common/BoxLayoutSection";
-import PERSONA from "@/assets/persona/persona (4).png";
 import FRAME from "@/assets/frame/Frame 36829.png";
 import TextHighlightComponent from "@/components/common/TextHighlightComponent";
 import AnimationFadeUpComponent from "@/components/common/AnimationFadeUpComponent";
 import PersonaComponent from "@/components/common/PersonaComponent";
 import FrameContainer from "../common/FrameContainer";
+import PERSONA from "@/assets/persona/persona (6).png";
 
 const TradeSection = () => {
   return (
