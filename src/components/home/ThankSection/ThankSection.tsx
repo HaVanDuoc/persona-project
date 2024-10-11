@@ -8,14 +8,12 @@ import AnimationFadeUpComponent from "@/components/common/AnimationFadeUpCompone
 const ThankSection = () => {
   return (
     <AnimationFadeUpComponent>
-      <BoxLayoutSection padding>
-        <section className="flex flex-col md:flex-row md:gap-10 items-center">
+      <BoxLayoutSection padding className="!mb-0">
+        <section className="flex flex-col md:flex-row md:gap-10 items-center pb-10">
           <ImageComponent img={PERSONA} alt="persona" />
-          <div>
             <h1 className="text-light">
               Thank you for choosing Project Persona.
             </h1>
-          </div>
         </section>
       </BoxLayoutSection>
     </AnimationFadeUpComponent>

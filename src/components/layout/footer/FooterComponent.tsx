@@ -13,7 +13,7 @@ const FooterComponent = () => {
       <p className="order-3 sm:order-2 font-bold uppercase">
         PROJECT persona © 2023 COPYRIGHT
       </p>
-      <div className="order-2 sm:order-3 flex flex-row items-center gap-3">
+      <div className="order-2 sm:order-3 flex flex-row items-center gap-3 sm:gap-5">
         <ImageComponent img={MEDIA_1} alt="media " className="w-5" />
         <ImageComponent
           img={MEDIA_TWITTER}

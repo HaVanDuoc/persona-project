@@ -9,7 +9,11 @@ interface Props {
   className?: string;
 }
 
-const AnimationFadeUpComponent = ({ children, delay = 0.1 }: Props) => {
+const AnimationFadeUpComponent = ({
+  children,
+  delay = 0.1,
+  className,
+}: Props) => {
   return (
     <motion.div
       whileInView={{ y: 0, opacity: 1 }}
@@ -18,6 +22,7 @@ const AnimationFadeUpComponent = ({ children, delay = 0.1 }: Props) => {
         y: 100,
         opacity: 0,
       }}
+      className={className}
     >
       {children}
     </motion.div>

@@ -5,12 +5,15 @@ import TextHighlightComponent from "@/components/common/TextHighlightComponent";
 import React from "react";
 
 import FRAME from "@/assets/frame/Frame 36832.svg";
+import cn from "@/utils/tailwind-utils";
 
 const StaySection = () => {
+  const bg = "bg-gradient-to-t from-transparent to-black";
+
   return (
-    <AnimationFadeUpComponent>
+    <AnimationFadeUpComponent className={cn(bg)}>
       <BoxLayoutSection>
-        <div className="pt-24">
+        <div className={cn("pt-24 ")}>
           <div className="relative w-[500px]">
             <ImageComponent
               img={FRAME}
