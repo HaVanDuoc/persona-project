@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-
-import FRAME from "@/assets/hero/Frame 36827.png";
-import NFT from "@/assets/hero/NFT.png";
 import ButtonComponent from "@/components/common/ButtonComponent";
+import PersonaComponent from "@/components/common/PersonaComponent";
+import FRAME from "@/assets/hero/Frame 36827.png";
+import PERSONA from "@/assets/persona/persona (3).svg";
 
 const HeroSection = () => {
   return (
@@ -17,7 +17,7 @@ const HeroSection = () => {
           className="w-full h-auto"
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <Image src={NFT} alt="nft" width={392} height={392} />
+          <PersonaComponent src={PERSONA} />
         </div>
       </div>
 

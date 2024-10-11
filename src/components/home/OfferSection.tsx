@@ -6,6 +6,7 @@ import NFT from "@/assets/home/hcfbdg 1.png";
 import FRAME from "@/assets/home/Component 60.svg";
 import GlowingEffect from "@/components/common/GlowingEffect";
 import AnimationFadeUpComponent from "@/components/common/AnimationFadeUpComponent";
+import PersonaComponent from "@/components/common/PersonaComponent";
 
 const OfferSection = () => {
   return (
@@ -13,7 +14,7 @@ const OfferSection = () => {
       <BoxLayoutSection padding>
         <div className="flex flex-col lg:flex-row gap-10 items-center">
           <div className="relative w-full">
-            <ImageComponent img={NFT} alt="nft" className="lg:min-w-[400px]" />
+            <PersonaComponent src={NFT} className="lg:min-w-[400px]" />
             <GlowingEffect />
           </div>
           <div className="relative">

@@ -1,23 +1,19 @@
+import React from "react";
 import BoxLayoutSection from "@/components/common/BoxLayoutSection";
 import ImageComponent from "@/components/common/ImageComponent";
-import React from "react";
-
-import PERSONA from "@/assets/persona/persona.svg";
+import PERSONA from "@/assets/persona/persona (4).png";
 import FRAME from "@/assets/frame/Frame.svg";
 import TextHighlightComponent from "@/components/common/TextHighlightComponent";
 import AnimationFadeUpComponent from "@/components/common/AnimationFadeUpComponent";
+import PersonaComponent from "@/components/common/PersonaComponent";
 
 const TradeSection = () => {
   return (
     <AnimationFadeUpComponent>
       <BoxLayoutSection padding>
-        <div className="flex flex-col lg:flex-row gap-10 items-center pb-24">
-          <div className="relative w-full sm:w-[600px]">
-            <ImageComponent
-              img={PERSONA}
-              alt="persona"
-              className="lg:min-w-[400px]"
-            />
+        <div className="flex flex-col lg:flex-row gap-24 items-center pb-24">
+          <div className="relative w-full sm:w-[500px]">
+            <PersonaComponent src={PERSONA} className="lg:min-w-[400px] " />
           </div>
           <div className="relative flex justify-center items-center">
             <ImageComponent
