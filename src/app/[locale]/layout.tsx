@@ -33,7 +33,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <NextUIProvider locale={locale}>
             <NextThemesProvider attribute="class">
-              {children}
+              <main className="w-screen overflow-x-hidden">{children}</main>
             </NextThemesProvider>
           </NextUIProvider>
         </NextIntlClientProvider>
