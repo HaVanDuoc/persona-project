@@ -39,7 +39,7 @@ const NftSection = () => {
       <BoxLayoutSection padding>
         <section className="space-y-10">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10 sm:gap-20 py-10 sm:py-20">
-            <ImageComponent img={IMG_NFT} className="sm:w-[400px]" />
+            <ImageComponent img={IMG_NFT} alt="" className="sm:w-[400px]" />
 
             <div className="w-full max-w-[500px]">
               <TextHighlightComponent
