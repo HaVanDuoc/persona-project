@@ -81,14 +81,13 @@ const SubDetailsContainer = () => {
         position="right"
         className="top-[3000px] hidden sm:block"
       />
-      {/* <SubComponent
+      <SubComponent
         img={SUB_3}
-        hidden="lg"
         className="top-[3000px] right-[-100px]"
-      /> */}
+      />
       <SubComponent
         img={SUB_5}
-        className="top-[2700px] left-[-70%] hidden lg:block"
+        className="top-[2700px] left-[-70%]"
       />
 
       <SubComponent img={SUB_6} className="top-[4000px] right-0" />

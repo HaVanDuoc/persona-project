@@ -5,7 +5,7 @@ import CLOSE from "@/assets/navbar/close 1.svg";
 import { NAV_LINKS } from "@/data/constants";
 import { useParams, usePathname } from "next/navigation";
 import LinkComponent from "@/components/common/LinkComponent";
-import SUB_IMG from "@/assets/sub/Vector.png";
+import SUB_IMG from "@/assets/sub/Vector (2).png";
 import { SubComponent } from "@/components/home/SubDetailsContainer";
 
 const AsideMenuComponent = ({
@@ -47,16 +47,13 @@ const AsideMenuComponent = ({
               >
                 {nav.name}
               </LinkComponent>
-              {index < NAV_LINKS.length -1 ? <Divider /> : null}
+              {index < NAV_LINKS.length - 1 ? <Divider /> : null}
             </>
           );
         })}
       </div>
 
-      <SubComponent
-        img={SUB_IMG}
-        className="top-[300px] -right-10 w-full"
-      />
+      <SubComponent img={SUB_IMG} className="top-[400px] !right-[-90%] block" />
     </aside>
   );
 };
